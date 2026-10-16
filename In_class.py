@@ -1,5 +1,10 @@
-print("This is some code.")
+from In_class_2 import withdraw
 
-print("More stuff")
+balance = 100
 
-print("Some more stuff")
+try:
+    amount = int(input("Please enter the ammount you would like to withdraw."))
+
+    balance = withdraw(amount, balance)
+except: 
+    print("Invalid amount")
